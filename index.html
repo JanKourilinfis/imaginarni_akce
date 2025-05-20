@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <form>
+    <form id="form">
         <h1 id="nadpis">přihláška na imaginární akci</h1>
         <div>
             <label for="text">zadejte jméno a příjmení</label>
@@ -19,7 +19,7 @@
         </div>
         <div>
             <label for="telefon">zadejte vaše telefonní číslo</label>
-            <input type="number" id="telefon" placeholder="telefonní číslo">
+            <input type="tel" id="telefon" placeholder="telefonní číslo">
         </div>
         <div>
             <label for="narozeni">zadejte vaše datum narození</label>
@@ -30,7 +30,7 @@
             <input type="color" id="color">
         </div>
         <label for="velikost">zadejte vaší velikost trička</label>
-        <div>
+        <div id="triko">
             <input type="radio" name="velikost">S
             <input type="radio" name="velikost">M
             <input type="radio" name="velikost">L
@@ -38,20 +38,32 @@
             <input type="radio" name="velikost">XXL
             
         </div>
-        <div>
-
+        <label for="temata">vyberte vaše zájmová témata</label>
+        <div id="tema">
+           <input type="checkbox" name="temata">HTML
+           <input type="checkbox" name="temata">CSS
+           <input type="checkbox" name="temata">JavaScript
+           <input type="checkbox" name="temata">Git
         </div>
         <div>
-
+           <label for="soubor">vyberte soubor</label>
+           <input type="file" id="soubor">
         </div>
         <div>
-
+            <label for="nastup">vyberte datum a čas nástupu</label>
+            <input type="datetime-local" id="nastup">
         </div>
         <div>
-
+            <label for="uroven">jakou máte úroveň znalostí</label>
+            <input type="range" id="uroven">
         </div>
         <div>
-
+            <label for="web">zadejte váš web/linkedin</label>
+            <input type="url" id="web">
+        </div>
+        <div>
+            <label for="password">zadejte heslo pro správu registrace</label>
+            <input type="password" id="password">
         </div>
         
         <button onclick="odeslat()" id="button">odeslat</button>
